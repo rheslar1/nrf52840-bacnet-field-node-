@@ -1,11 +1,14 @@
-# Draw.io Diagrams
+# Diagrams
 
-This folder contains editable Draw.io source diagrams and PNG exports for the C++17 nRF52840 BACnet Field Node design.
+This folder contains the generated full-system UML evidence for `nRF52840 BACnet Field Node`.
 
-| Diagram | Editable Source | PNG Export |
-| --- | --- | --- |
-| Field Node System Architecture | `field-node-system.drawio` | `field-node-system.png` |
-| C++17 SOLID And Pattern Map | `cpp-solid-patterns.drawio` | `cpp-solid-patterns.png` |
-| Commissioning And Storage Flow | `commissioning-storage-flow.drawio` | `commissioning-storage-flow.png` |
+| Asset | Purpose |
+| --- | --- |
+| [`full-system-uml.drawio`](full-system-uml.drawio) | Editable Draw.io source for the full system UML. |
+| [`full-system-uml.png`](full-system-uml.png) | PNG export of the UML diagram for README and documentation review. |
 
-The `.svg` files are render intermediates used to generate PNGs in this environment because the Draw.io desktop CLI is not installed locally.
+Regenerate these assets from the portfolio workspace with:
+
+```bash
+python3 scripts/generate-deep-architecture-assets.py
+```
